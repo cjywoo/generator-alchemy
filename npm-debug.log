@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish',
+1 verbose cli   '--access=public' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\woo\\Documents\\GitHub\\generator-alchemy',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\woo\AppData\Roaming\npm-cache\generator-alchemy\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\woo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle generator-alchemy@1.0.0~prepublish: generator-alchemy@1.0.0
+11 silly lifecycle generator-alchemy@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\woo\\AppData\\Roaming\\npm-cache\\generator-alchemy\\1.0.0\\package.tgz',
+12 verbose tar pack   'C:\\Users\\woo\\Documents\\GitHub\\generator-alchemy' ]
+13 verbose tarball C:\Users\woo\AppData\Roaming\npm-cache\generator-alchemy\1.0.0\package.tgz
+14 verbose folder C:\Users\woo\Documents\GitHub\generator-alchemy
+15 verbose addLocalTarball adding from inside cache C:\Users\woo\AppData\Roaming\npm-cache\generator-alchemy\1.0.0\package.tgz
+16 verbose correctMkdir C:\Users\woo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd generator-alchemy@1.0.0
+18 verbose afterAdd C:\Users\woo\AppData\Roaming\npm-cache\generator-alchemy\1.0.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\woo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\woo\AppData\Roaming\npm-cache\generator-alchemy\1.0.0\package\package.json written
+21 silly publish { name: 'generator-alchemy',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: '基于gulp+angular的项目脚手架工具',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/cjywoo/generator-alchemy.git' },
+21 silly publish   author: { name: 'wootic' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/cjywoo/generator-alchemy/issues' },
+21 silly publish   homepage: 'https://github.com/cjywoo/generator-alchemy#readme',
+21 silly publish   keywords: [ 'yeoman-generator' ],
+21 silly publish   devDependencies:
+21 silly publish    { chalk: '^2.1.0',
+21 silly publish      'yeoman-generator': '^1.1.1',
+21 silly publish      yosay: '^2.0.1' },
+21 silly publish   readme: '# 基于gulp+angular的脚手架工具\r\n\r\n## 开始安装\r\n首选确保已经安装Node.js\r\n\r\n## 安装yeoman\r\n```\r\nnpm install -g yo\r\n```\r\n\r\n## 安装脚手架\r\n```\r\nnpm install -g generator-alchemy\r\n```\r\n\r\n## 在自己的空项目中运行\r\n```\r\nyo alchemy\r\n```\r\n\r\n## 然后在项目中安装node_modules和gulp\r\n```\r\nnpm install\r\nnpm install gulp -g\r\n```\r\n\r\n## 运行gulp-help 查看各类指令\r\n```\r\ngulp help\r\n```\r\n\r\n注意：\r\n架手架目前已经实现的功能\r\n* 根据需要引入自己的css和js依赖\r\n* 自动将小的icon转成base64编码\r\n* 配套前端的mock服务器，让前端开发脱离后端\r\n* 自动压缩js,css，编译Less,自动添加css前缀，自动增加静态资源的版本号\r\n* 开发热更新，浏览器实时刷新显示\r\n* js代码进行js hint语法检查。\r\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   _id: 'generator-alchemy@1.0.0',
+21 silly publish   _shasum: '704648eff35553f901569002296f95798c49093d',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name generator-alchemy
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'generator-alchemy',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'generator-alchemy',
+26 silly mapToRegistry   name: 'generator-alchemy',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/generator-alchemy
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\woo\AppData\Roaming\npm-cache\generator-alchemy\1.0.0\package.tgz
+30 verbose request uri https://registry.npmjs.org/generator-alchemy
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 20:52:14
+33 verbose request using bearer token for auth
+34 verbose request id 173bb118fda55a76
+35 http request PUT https://registry.npmjs.org/generator-alchemy
+36 http 403 https://registry.npmjs.org/generator-alchemy
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '111',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Mon, 04 Sep 2017 12:52:10 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-hkg17927-HKG',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1504529530.822119,VS0,VE1131',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating C:\Users\woo\AppData\Roaming\npm-cache\registry.npmjs.org\generator-alchemy on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: You do not have permission to publish "generator-alchemy". Are you logged in as the correct user? : generator-alchemy
+40 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+40 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+40 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid generator-alchemy
+43 verbose cwd C:\Users\woo\Documents\GitHub\generator-alchemy
+44 error Windows_NT 10.0.10586
+45 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish" "--access=public"
+46 error node v6.9.1
+47 error npm  v3.10.8
+48 error code E403
+49 error You do not have permission to publish "generator-alchemy". Are you logged in as the correct user? : generator-alchemy
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

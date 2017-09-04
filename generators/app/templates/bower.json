@@ -1,0 +1,30 @@
+{
+  "name": "zhongce3",
+  "authors": [
+    "wootic"
+  ],
+  "description": "angularjs webapp",
+  "main": "",
+  "keywords": [
+    "angularjs",
+    "webapp"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-ui-router": "ui-router#^0.4.2",
+    "angular-validation": "^1.4.3",
+    "angular-animate": "^1.6.4",
+    "angular-pull-down-to-refresh": "*",
+    "angular-touch": "^1.6.4",
+    "chart.js": "^2.6.0"
+  }
+}

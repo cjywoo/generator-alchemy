@@ -1,0 +1,48 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.sun-page-scroll{
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+.sun-page-scroll::-webkit-scrollbar{
+    height: 0;
+    width: 0;
+}
+
+.sun-page-wrapper{
+  height: 100%;
+  overflow: hidden;
+}
+.sun-body-wrapper{
+  margin-top: 64px;
+  padding: @blockMargin @blockMargin 50px;
+}
+.sun-body-top-wrapper{
+  margin-top: 50px;
+  padding: 0 0 50px;
+}
+.icon{
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.sun-page-top-nomargin{
+  margin-top:0px!important;
+}
+.sun-page-top-nopadding{
+  padding-top:0px!important;
+}
+.sun-page-top-notop{
+  top:0px!important;
+}

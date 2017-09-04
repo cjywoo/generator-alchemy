@@ -1,0 +1,186 @@
+.notes-item.ng-enter{
+    transition: transform .5s;
+    transform: translateX(100%);
+}
+.notes-item.ng-enter.ng-enter-active{
+    transform: translateX(0);
+}
+.notes-item.ng-leave{
+    transition: transform .5s;
+}
+.notes-item.ng-leave.ng-leave-active{
+    transform: translateX(-100%);
+}
+.notes-item.ng-enter-stagger {
+  -webkit-transition-delay:0.05s;
+   transition-delay:0.05s;
+
+   /* this is here to avoid accidental CSS inheritance */
+   -webkit-transition-duration:0;
+   transition-duration:0;
+}
+
+[name=pageforward].ng-enter, [name=pageforward].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -o-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
+}
+
+[name=pageforward].ng-enter {
+  transform: translate3d(100%,0,0);
+}
+
+[name=pageforward].ng-enter-active {
+  transform: translate3d(0,0,0);
+}
+
+[name=pageforward].ng-leave {
+  opacity: 1;
+}
+
+[name=pageforward].ng-leave-active {
+  opacity: 0;
+}
+
+[name=pagebackward].ng-enter, [name=pagebackward].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -o-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
+}
+
+[name=pagebackward].ng-enter {
+  opacity: 0;
+}
+
+[name=pagebackward].ng-enter-active {
+  opacity: 1;
+}
+
+[name=pagebackward].ng-leave {
+  opacity: 1;
+}
+
+[name=pagebackward].ng-leave-active {
+  opacity: 0;
+  transform:translate(7.5rem,0);
+}
+
+
+
+[name=home].ng-enter,[name=home].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -o-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
+}
+[name=home].ng-leave{
+  opacity: 1
+}
+[name=home].ng-leave-active{
+  opacity: 0;
+}
+
+[name=home].ng-enter{
+  opacity: 0
+}
+[name=home].ng-enter-active{
+  opacity: 1;
+}
+
+.sun-mask{
+  -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -o-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
+    opacity: 1;
+}
+.sun-mask.ng-hide{
+  opacity:0;
+}
+.sun-mask.ng-hide-add, .sun-mask.ng-hide-remove{
+  display:block!important;
+}
+
+
+
+// loading 动画
+.spinner-up {
+  width: 60px;
+  height: 60px;
+  background-color: #67CF22;
+
+  margin: 100px auto;
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+  animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.spinner-bounce {
+  width: 0.5rem;
+  height: 0.5rem;
+  position: relative;
+  margin: 0.6rem auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #cc1e34;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "generator-alchemy",
+  "version": "1.0.0",
+  "description": "基于gulp+angular的项目脚手架工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjywoo/generator-alchemy.git"
+  },
+  "author": "wootic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjywoo/generator-alchemy/issues"
+  },
+  "homepage": "https://github.com/cjywoo/generator-alchemy#readme",
+  "keywords": ["yeoman-generator"],
+  "devDependencies": {
+    "chalk": "^2.1.0",
+    "yeoman-generator": "^1.1.1",
+    "yosay": "^2.0.1"
+  }
+}
