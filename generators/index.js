@@ -81,18 +81,11 @@ module.exports = generators.Base.extend({
         this.sourceRoot(path.join(__dirname, 'templates'));
         this.destinationPath('./');
     },
-    // install: function () {
-    //     var done = this.async();
-    //     this.spawnCommand('npm', ['install'])  //安装项目依赖
-    //         .on('exit', function (code) {
-    //             if (code) {
-    //                 done(new Error('code:' + code));
-    //             } else {
-    //                 done();
-    //             }
-    //         })
-    //         .on('error', done);
-    // },
+    install: function() {      //安装依赖
+          this.installDependencies({
+              skipInstall: this.options['skip-install']
+          });
+      },
     end: function () {
         var done = this.async();
         this.spawnCommand('gulp')   //生成器退出前运行gulp，开启watch任务

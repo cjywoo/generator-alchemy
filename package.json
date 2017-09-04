@@ -1,6 +1,6 @@
 {
-  "name": "generator-alchemy",
-  "version": "1.0.0",
+  "name": "generator-alchemy-woo",
+  "version": "1.0.2",
   "description": "基于gulp+angular的项目脚手架工具",
   "main": "index.js",
   "scripts": {

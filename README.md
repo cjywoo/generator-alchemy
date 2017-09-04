@@ -10,12 +10,12 @@ npm install -g yo
 
 ## 安装脚手架
 ```
-npm install -g generator-alchemy
+npm install -g generator-alchemy-woo
 ```
 
 ## 在自己的空项目中运行
 ```
-yo alchemy
+yo alchemy-woo
 ```
 
 ## 然后在项目中安装node_modules和gulp
